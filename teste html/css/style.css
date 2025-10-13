@@ -1,0 +1,71 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(157, 27, 168, 1) 0%, rgb(87, 2, 20) 50%, rgb(5, 5, 5) 100%);
+
+;
+}
+
+
+div {
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    width: 20%;
+    color: white;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    color: black;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    width: 95%;
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* tom de cinza mais claro, por exemplo */
+    color: #fff;
+    border-color: #777;
+    transition: all 0.3s ease;
+}
+
+.botao-cadastro {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botao-cadastro:hover {
+    background-color: #555;
+    color: #fff;
+    border-color: #777;
+    transition: all 0.3s ease;
+}
