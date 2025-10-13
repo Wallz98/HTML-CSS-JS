@@ -1,4 +1,3 @@
-
 body {
     height: 100%;
     margin: 0;
@@ -6,22 +5,66 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 200px; 
+
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(90deg, rgba(157, 27, 168, 1) 0%, rgb(87, 2, 20) 50%, rgb(5, 5, 5) 100%);
 
-;
+    ;
 }
 
+.container {
+    display: flex;
+    height: 100vh;
+}
 
-div {
+/* Sidebar à esquerda */
+.sidebar {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* escondida fora da tela */
+    height: 100vh;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0;
+}
+
+/* Quando ativada, desliza para a tela */
+.sidebar.active {
+    left: 0;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    width: auto;
+    /* acima da sidebar */
+}
+
+.cadastro {
     background-color: black;
     padding: 15px;
+    margin-top: 200px;
     border-radius: 20px;
     border: none;
-    width: 20%;
+    width: 90%;
+    max-width: 400px;
     color: white;
     text-align: center;
+    box-sizing: border-box;
+
 }
 
 input {
@@ -43,7 +86,8 @@ button {
 }
 
 button:hover {
-    background-color: #555; /* tom de cinza mais claro, por exemplo */
+    background-color: #555;
+    /* tom de cinza mais claro, por exemplo */
     color: #fff;
     border-color: #777;
     transition: all 0.3s ease;
